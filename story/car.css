@@ -1,0 +1,48 @@
+body {
+    background-color: #a3d5d3;
+  }
+/* CAR AND TRAFFIC LIGHTS */
+.light {
+    position: absolute;
+    top: 5vh;
+    left: 35vw;
+    height: 15vh;
+}
+#car {
+    position: absolute;
+    top: 10vh;
+    left: 0vw;
+    height: 20vh;
+}
+  #person {
+    position: absolute;
+    top: 60vh;
+    left: 80vw;
+    height: 25vh; 
+    transform: rotateY(180deg);
+  }
+
+  .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:  115% !important; 
+    margin-right:  -20% !important; 
+}
+.btns a{
+    width: 130px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color:#ffffff;
+    background-color: #3963f0;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.btns a:hover{
+    background-color: #284fd1;
+}
