@@ -1,0 +1,48 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    overflow: hidden;
+}
+#vizContainer {
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 90%;
+   overflow: scroll;
+}
+#explanationContainer {
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   width: 100%;
+   height: 6%;
+   font-size: 7min;
+   padding: 10px;
+}
+.btns{
+    position: absolute;
+    bottom: 32px;
+    left: 45% ;
+    width: 100% !important;
+    height: 6%;
+    font-size: 7min;
+    padding: 10px;
+    font-size: 1rem;
+    text-decoration: none !important;
+}
+.btns a{
+    width: 145px;
+    height: 55px;
+    border: none;
+    outline: none;
+    color:#000000;
+    background-color:  #3963f0;
+    text-decoration: none !important;
+    margin: 0px 0px 0px 8px;
+}
+
+.btns a:hover{
+    background-color: #284fd1;
+}
