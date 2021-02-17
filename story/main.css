@@ -1,0 +1,128 @@
+body {
+    background-color: #a3d5d3;
+  }
+  #hero {
+    position: absolute;
+    top: 650px;
+    left: 50px;
+    height: 450px;
+  }
+  #villain {
+    position: absolute;
+    top: 660px;
+    left: 810px;
+    height: 450px;
+    width: 400px;
+    transform: rotateY(180deg);
+  }
+  #lightning {
+    position: absolute;
+    top: 920px;
+    left: 290px;
+    height: 120px;
+    width: 120px;
+  }
+  .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:  115% !important; 
+    margin-right:  -20% !important; 
+}
+.btns a{
+    width: 130px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color:#ffffff;
+    background-color: #3963f0;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.btns a:hover{
+    background-color: #284fd1;
+}
+
+  /* Media queries */
+ /* Small only */
+@media screen and (max-width:320px) {
+    .hero-villain{
+      max-width: 300px ;
+      height: 300px; 
+      margin-top: 500px !important;
+    }
+    #hero {
+      position: absolute;
+      top: 900px !important;
+      left: 50px;
+      height: 450px;
+    }
+    #villain {
+      position: absolute;
+      top: 900px !important;
+    }
+    #lightning {
+      position: absolute;
+      top: 900px !important;
+    }
+    
+  }
+/* Medium and up */
+@media screen and (min-width: 320px) and (max-width: 640px) {
+
+}
+
+/* Medium only */
+@media screen and (min-width: 640px) and (max-width: 1024px) {}
+
+/* Large and up */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  #hero {
+    top: 100px;
+    left: 50px;
+    height: 450px;
+  }
+  #villain {
+    top: 110px;
+    left: 810px;
+  }
+  #lightning {
+    top: 380px;
+    left: 290px;
+  }
+  .btns{
+    margin-top:  60% !important; 
+    margin-right:  -10% !important; 
+}
+.btns a{
+    margin: 25px;
+}
+}
+
+/* Large only */
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  #hero {
+    top: 15px !important;
+    left: 50px;
+    height: 450px;
+  }
+  #villain {
+    top: 15px;
+    left: 850px;
+  }
+  #lightning {
+    top: 290px;
+    left: 290px;
+  }
+  .btns{
+    margin-top:  40% !important; 
+    margin-left: -20% !important; 
+  }
+.btns a {
+    margin: 25px;
+}
+}
