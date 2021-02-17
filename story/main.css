@@ -106,13 +106,13 @@ body {
 /* Large only */
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   #hero {
-    top: 15px !important;
-    left: 50px;
+    top: 50px !important;
+    left: 75px;
     height: 450px;
   }
   #villain {
-    top: 15px;
-    left: 850px;
+    top: 50px;
+    left: 870px;
   }
   #lightning {
     top: 290px;
@@ -120,9 +120,10 @@ body {
   }
   .btns{
     margin-top:  40% !important; 
-    margin-left: -20% !important; 
+    margin-right: 0% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
   }
-.btns a {
-    margin: 25px;
-}
+
 }
