@@ -7,12 +7,21 @@ body {
     top: 5vh;
     left: 35vw;
     height: 15vh;
+    z-index: 100;
 }
 #car {
     position: absolute;
     top: 10vh;
     left: 0vw;
     height: 20vh;
+    z-index: 100;
+}
+#road {
+  position: absolute;
+  top: 10vh;
+  left: 0vw;
+  height: 40vh;
+  opacity: 0.5;
 }
   #person {
     position: absolute;
