@@ -1,34 +1,48 @@
 body {
     background-color: #a3d5d3;
   }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+  }
+  
+  [class*="col-"] {
+    float: center;
+    padding: 15px;
+  }
   #hero {
     position: absolute;
-    top: 650px;
-    left: 75px;
+    top: 150px;
+    left: 45px;
     height: 320px;
     width: 270px;
   }
   #villain {
     position: absolute;
-    top: 660px;
-    left: 810px;
+    top: 165px;
+    left: 680px;
     height: 320px;
     width: 270px;
     transform: rotateY(180deg);
   }
   #lightning {
     position: absolute;
-    top: 840px;
-    left: 260px;
+    top: 330px;
+    left: 210px;
     height: 120px;
-    width: 120px;
+    width: 80px;
   }
   .btns{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:  115% !important; 
-    margin-right:  -20% !important; 
+    margin-top:  50% !important;  
+    width: 100%;
+    margin-left: 30% !important;
 }
 .btns a{
     width: 130px;
@@ -36,8 +50,8 @@ body {
     border: none;
     outline: none;
     color:#ffffff;
+    margin: 5%;
     background-color: #3963f0;
-    margin: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,88 +63,135 @@ body {
 }
 
   /* Media queries */
- /* Small only */
-@media screen and (max-width:320px) {
-    .hero-villain{
-      max-width: 300px ;
-      height: 300px; 
-      margin-top: 500px !important;
-    }
-    #hero {
-      position: absolute;
-      top: 900px !important;
-      left: 50px;
-      height: 450px;
-    }
-    #villain {
-      position: absolute;
-      top: 900px !important;
-    }
-    #lightning {
-      position: absolute;
-      top: 900px !important;
-    }
-    
-  }
-/* Medium and up */
-@media screen and (min-width: 320px) and (max-width: 640px) {
-
+ /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
 }
 
-/* Medium only  by Rahima Salmanova*/
-@media screen and (min-width: 640px) and (max-width: 1024px) {}
-
-/* Large and up */
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
-  #hero {
-    top: 100px;
-    left: 50px;
-    height: 450px;
-    width: 380px;
-  }
-  #villain {
-    top: 110px;
-    left: 810px;
-    height: 450px;
-    width: 380px;
-  }
-  #lightning {
-    top: 380px;
-    left: 290px;
-  }
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+@media only screen and (min-width: 1040px) {
+  /* For extra large screens: */
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
   .btns{
-    margin-top:  60% !important; 
-    margin-right:  -10% !important; 
-}
-.btns a{
-    margin: 25px;
-}
-}
-
-/* Large only */
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
-  #hero {
-    top: 50px !important;
-    left: 75px;
-    height: 450px;
-    width: 400px;
-  }
-  #villain {
-    top: 50px;
-    left: 870px;
-    height: 450px;
-    width: 400px;
-  }
-  #lightning {
-    top: 290px;
-    left: 290px;
-  }
-  .btns{
-    margin-top:  40% !important; 
-    margin-right: 0% !important;
     display: flex;
     justify-content: center;
-    align-items: center;  
-  }
-
+    align-items: center;
+    margin-top:  40% !important;  
+    width: 100%;
+    margin-left: -5% !important; }
+.btns a{
+  margin: 3%;
 }
+#hero {
+  top: 50px;
+}
+#villain {
+  top: 65px;
+}
+#lightning{
+  top: 230px;
+}
+}
+@media only screen and (min-width: 1040px) and (max-width: 1240px) {
+  /* For extra large screens: */
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:  30% !important;  
+    width: 100%;
+    margin-left: -3% !important; }
+.btns a{
+  margin: 3%;
+}
+#hero {
+  top: 50px;
+  left: 75px !important;
+}
+#villain {
+  top: 65px;
+  left: 720px;
+}
+#lightning{
+  top: 230px;
+  left: 255px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+}
+@media only screen and (min-width: 1240px) and (max-width: 1400px) {
+  /* For extra large screens: */
+  .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:  30% !important;  
+    width: 100%;
+    margin-left: -3% !important; }
+.btns a{
+  margin: 3%;
+}
+#hero {
+  top: 50px;
+  left: 150px !important;
+}
+#villain {
+  top: 65px;
+  left: 850px;
+}
+#lightning{
+  top: 230px;
+  left: 340px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+}
+
+
+
