@@ -1,0 +1,43 @@
+#gameArea{
+  border: 4px solid #6d30d9;
+}
+body{
+  height: 100vh;
+  background: linear-gradient(0deg, 
+  rgba(34,193,195,1) 0%, 
+  rgba(120,45,253,0.33171521035598706) 100%);
+  text-align: center;
+  overflow: hidden;
+}
+h1, p {
+  font-family: Comic Sans MS;
+}
+p{
+  font-size: 1.3rem;
+}
+
+div > .btns{
+  position: relative;
+  bottom: 32px;
+  left: 50% ;
+  width: 50% !important;
+  height: 6.1%;
+  font-size: 7min;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.btns a{
+  width: 145px;
+  height: 55px;
+  border: none;
+  outline: none;
+  color:#000000;
+  background-color:  #3963f0;
+  text-decoration: none !important;
+  margin: 15px 0px 0px 41px !important;
+}
+.btns a:hover{
+  background-color: #284fd1;
+}
