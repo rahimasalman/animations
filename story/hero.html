@@ -4,17 +4,25 @@
     </head>
     <body>
     
-            <div class="hero-villain">
+        <div class = "row">
+            <div class="hero-villain col-3 col-s-6 col-l-8">
                 <img id="hero" src="flash.png">
+                <img id="lightning" src="lightning.svg"> 
                 <img id="villain" src="monster.png">
-                <img id="lightning" src="lightning.svg">
+               
             </div>
-
-        <!-- buttons ---------------------------->
-    <div class="btns">
-        <!-- <a href="hero.html">Previous</a> -->
-        <a href="car.html">Next</a>
-    </div>
+        </div>
+<!-- buttons ---------------------------->
+<div class="btns col-4 col-s-4 col-l-8">
+    <!-- <a href="car.html"> << Previous</a>  -->
+    <a onclick="location.reload();">Refresh page</a>
+    <a href="car.html">Next >>></a>
+   
+</div>
+    <script>
+    location.reload();
+    <a onclick="location.reload();">Refresh page</a>
+    </script>
         <script src="script.js"></script>
     </body>
 </html>
