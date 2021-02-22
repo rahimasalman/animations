@@ -5,7 +5,7 @@ let lightning = document.querySelector("#lightning");
 
 //Setup animation code here
 let lightningStart = {"left": "290px"};
-let lightningEnd   = {"left": "750px"};
+let lightningEnd   = {"left": "670px"};
 let options        = {"duration": 800};
 
 let hitTheVillain = () => {
@@ -23,4 +23,3 @@ let hitTheVillain = () => {
 
 //Run animation code here
 lightning.animate([lightningStart, lightningEnd], options).onfinish = hitTheVillain; 
-
